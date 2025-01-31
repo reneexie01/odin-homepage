@@ -1,3 +1,8 @@
+* {
+    margin: 0px;
+    padding: 2%;
+}
+
 h1 {
     font-family: 'Playfair Display'
 }
@@ -6,6 +11,33 @@ p {
     font-family: 'Roboto';
 }
 
-img {
-    width: 100px;
+div {
+    border: 1px solid red;
+}
+
+.introduction-image {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: relative;
+    max-width: 100%;
+}
+
+.introduction-image > img {
+    max-width: 100%;
+    border: 1px solid blue;
+}
+
+.h1-name {
+    max-width: 90%;
+    position: absolute;
+    font-size: 15vw;
+    border: 1px solid blue;
+}
+
+.introduction-image, .about-me {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
