@@ -22,7 +22,7 @@ div {
     align-items: center;
 }
 
-.introduction-image {
+.introduction-image, .footer-image {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -42,7 +42,7 @@ div {
     border: 1px solid blue;
 }
 
-.about-me > h1 {
+.about-me > h1, .contact-information > h1 {
     font-size: 10vw;
 }
 
@@ -50,12 +50,16 @@ div {
     font-size: 5vw;
 }
 
-.about-me > .social-icons {
+.social-icons {
     display: flex;
-    max-width: 80vw;
+    justify-content: center;
 }
 
-.about-me > .social-icons > img {
-    min-width: 10vw;
+.social-icons > img {
+    max-width: 10vw;
     padding: 0vw 3vw 0vw 3vw
+}
+
+.address > p, .number-email > p {
+    padding: 0px;
 }
