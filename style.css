@@ -3,16 +3,12 @@
     padding: 2%;
 }
 
-h1 {
+h1, h2 {
     font-family: 'Playfair Display'
 }
 
 p {
     font-family: 'Roboto';
-}
-
-div {
-    border: 1px solid red;
 }
 
 .introduction-image, .about-me {
@@ -32,18 +28,17 @@ div {
 
 .introduction-image > img {
     max-width: 100%;
-    border: 1px solid blue;
 }
 
 .introduction-image > h1 {
     max-width: 90%;
     position: absolute;
     font-size: 15vw;
-    border: 1px solid blue;
 }
 
-.about-me > h1, .contact-information > h1 {
+.about-me > h1, .contact-information > h1, .work > h1 {
     font-size: 10vw;
+    text-align: center;
 }
 
 .about-me > p {
@@ -62,4 +57,53 @@ div {
 
 .address > p, .number-email > p {
     padding: 0px;
+}
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 2px 2px 10px #888888;
+    margin-bottom: 5vh;
+}
+
+.project-image {
+    background-color: green;
+    min-width: 80vw;
+    min-height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.project-image > p {
+    font-family: 'Playfair Display';
+    font-size: 10vw;
+    color: white;
+    max-width: 60vw;
+}
+
+h2 {
+    font-size: 5vw;
+}
+
+.project-information {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-icons {
+    display: flex;
+    justify-content: end;
+    min-width: 30vw;
+}
+
+.nav-icons > img {
+    max-width: 8vw;
+}
+
+.project-summary > p {
+    font-size: 4vw;
 }
