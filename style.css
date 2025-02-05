@@ -1,14 +1,24 @@
-* {
+body {
+    max-width: 100%;
     margin: 0px;
-    padding: 2%;
+}
+
+section {
+    max-width: 80vw;
+    margin: 0px;
+    padding: 10vw 10vw 0vw 10vw;
 }
 
 h1, h2 {
-    font-family: 'Playfair Display'
+    font-family: 'Playfair Display';
 }
 
 p {
     font-family: 'Roboto';
+}
+
+.introduction {
+    background-image: linear-gradient(0.9turn,white 65%, cadetblue 65%);
 }
 
 .introduction-image, .about-me {
@@ -18,7 +28,7 @@ p {
     align-items: center;
 }
 
-.introduction-image, .footer-image {
+.introduction-image {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -34,6 +44,7 @@ p {
     max-width: 90%;
     position: absolute;
     font-size: 15vw;
+    bottom: -10%;
 }
 
 .about-me > h1, .contact-information > h1, .work > h1 {
@@ -48,6 +59,8 @@ p {
 .social-icons {
     display: flex;
     justify-content: center;
+    margin-top: 5vh;
+    margin-bottom: 10vh;
 }
 
 .social-icons > img {
@@ -65,11 +78,11 @@ p {
     align-items: center;
     box-shadow: 2px 2px 10px #888888;
     margin-bottom: 5vh;
+    padding: 0;
 }
 
 .project-image {
-    background-color: green;
-    min-width: 80vw;
+    object-fit: fill;
     min-height: 20vh;
     display: flex;
     align-items: center;
@@ -77,11 +90,38 @@ p {
     text-align: center;
 }
 
+.project-1 > .project-image {
+    background-color: maroon;
+}
+
+.project-2 > .project-image {
+    background-color: slateblue;
+}
+
+.project-3 > .project-image {
+    background-color: darkgoldenrod;
+}
+
+.project-4 > .project-image {
+    background-color: forestgreen;
+}
+
+.project-5 > .project-image {
+    background-color: palevioletred;
+}
+
+.project-6 > .project-image {
+    background-color: skyblue;
+}
+
+.project-description {
+    padding: 0vh 5vw 5vh 5vw;
+}
+
 .project-image > p {
     font-family: 'Playfair Display';
     font-size: 10vw;
     color: white;
-    max-width: 60vw;
 }
 
 h2 {
@@ -106,4 +146,19 @@ h2 {
 
 .project-summary > p {
     font-size: 4vw;
+}
+
+.footer {
+    background-color: cadetblue;
+    color: white;
+}
+
+.footer-image {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-image > img {
+    max-width: 100%;
+    position: absolute;
 }
