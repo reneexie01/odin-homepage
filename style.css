@@ -165,6 +165,11 @@ p {
 
 @media screen and (min-width: 768px) {
 
+ .work > h1, .contact-information > h1 {
+    font-size: 5vw;
+    text-align: left;
+}
+
  .project-container {
     display: flex;
     flex-wrap: wrap;
@@ -212,5 +217,57 @@ p {
     margin-top: 0;
 }
 
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.footer > div {
+    margin-top: 0;
+}
+
+.contact-information {
+    max-width: 50%;
+    overflow: auto;
+}
+
+div.phone-icon {
+    width: 3vw;
+    height: 3vh;
+    background-image: url('icons/phone.svg');
+    margin: 0;
+    padding: 0;
+}
+
+div.email-icon {
+    width: 3vw;
+    height: 3vh;
+    background-image: url('icons/email-outline.svg');
+    margin: 0;
+    padding: 0;
+}
+
+.contact-information > .social-icons {
+    display: flex;
+    justify-content: start;
+    margin: 0;
+}
+
+.social-icons > img {
+    max-height: 3vh;
+    padding: 3%;
+}
+
+.footer-image {
+    display: inline;
+    max-width: 30%;
+    margin: 10%;
+}
+
+.footer-image > img {
+    max-width: 100%;
+    position: static;
+}
 
 }
