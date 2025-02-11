@@ -170,34 +170,37 @@ p {
 @media screen and (min-width: 768px) {
 
  .introduction {
+    background-image: linear-gradient(0.95turn,white 65%, cadetblue 65%);
+    border: 1px solid red;
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
 }
-
- .introduction-image {
-    display: flex;
-    justify-content: space-between;
-    position: absolute;
-    min-width: 80%;
- }
 
  .introduction-image > img {
     max-width: 40vw;
-    translate: -27vw 3vh;
+    translate: -25vw 2vh;
+    z-index: 2;
+    border: 1px solid blue;
  }
 
  .introduction-image > h1 {
-    font-size: 8vw;
-    translate: 18vw -35vh;
+    font-size: 6vw;
+    min-width: 50vw;
+    translate: 25vw -42vh;
+    border: 1px solid blue;
+    z-index: 2;
  }
 
  .about-me {
     background-color: white;
-    max-width: 80vw;
+    max-width: 70vw;
     max-height: 50vw;
     border: 1px solid black;
     margin-top: 15vh;
     padding: 5vw;
+    translate: 0vw -50vh;
+    z-index: 1;
+    border: 1px solid red;
  }
 
  .about-me > p {
@@ -209,13 +212,16 @@ p {
     text-align: left;
 }
 
+.work {
+    padding-left: 10vw;
+    padding-right: 10vw;
+}
+
  .project-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    gap: 5%;
-    padding: 0;
-    margin: 0;
+    justify-content: space-between;
+    gap: 0;
  }
 
  .section {
@@ -223,7 +229,7 @@ p {
     margin: 0;
  }
  .projects {
-    max-width: 40%;
+    max-width: 38vw;
     max-height: 50vh;
     overflow: auto;
  }
@@ -260,6 +266,8 @@ p {
     display: flex;
     justify-content: space-between;
     align-content: center;
+    padding-left: 5vw;
+    padding-right: 5vw;
 }
 
 .footer > div {
@@ -277,10 +285,9 @@ p {
 }
 
 span.phone-icon {
-    width: 3vw;
-    height: 3vh;
+    min-width: 3vw;
+    min-height: 3vh;
     background-image: url('icons/phone.svg');
-    margin: 0;
     padding: 0 1vw 0 0;
     filter: invert(100%);
     background-repeat: no-repeat;
@@ -288,10 +295,9 @@ span.phone-icon {
 }
 
 span.email-icon {
-    width: 3vw;
-    height: 3vh;
+    min-width: 3vw;
+    min-height: 3vh;
     background-image: url('icons/email-outline.svg');
-    margin: 0;
     padding: 0 1vw 0 0;
     filter: invert(100%);
     background-repeat: no-repeat;
@@ -312,7 +318,6 @@ span.email-icon {
 .footer-image {
     display: inline;
     max-width: 30%;
-    margin: 10%;
 }
 
 .footer-image > img {
