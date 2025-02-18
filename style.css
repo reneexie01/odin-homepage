@@ -181,7 +181,6 @@ p {
    position: absolute;
  }
 
-
  .introduction-image > img {
     max-width: 40vw;
     translate: 5vw 5vh
@@ -230,6 +229,7 @@ p {
     padding: 0;
     margin: 0;
  }
+
  .projects {
     max-width: 38vw;
     max-height: 50vh;
@@ -326,5 +326,69 @@ span.email-icon {
     max-width: 100%;
     position: static;
 }
+
+}
+
+@media screen and (min-width: 1440px) {
+
+    .introduction-image {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        translate: 0 12.5vh;
+    }
+
+    .introduction-image > img {
+        translate: 0 0;
+    }
+
+    .introduction-image > h1 {
+        position: absolute;
+        font-size: 5vw;
+        text-align: center;
+        translate: -5vw -5vh;
+    }
+
+    .social-icons {
+        min-width: 50vw;
+        display: flex;
+        justify-content: end;
+    }
+
+    .social-icons > img {
+        min-height: 5vh;
+    }
+
+    .projects {
+        max-width: 25vw;
+    }
+
+    .project-image > p {
+        font-size: 4vw;
+    }
+
+    .project-description {
+        padding: 1vw 2vw 0 2vw;
+    }
+
+    h2 {
+        font-size: 1.5vw;
+    }
+    
+    .project-summary {
+        margin-bottom: 10vh
+    }
+
+    .project-summary > p {
+        font-size: 1vw;
+    } 
+
+    .contact-information {
+        max-width: 30vw;
+    }
+
+    .contact-information > p, .address > p, .number-email > p {
+        font-size: 1.5vw;
+    }
 
 }
